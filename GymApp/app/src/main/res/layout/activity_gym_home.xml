@@ -7,10 +7,38 @@
     tools:context=".GymHome">
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/topTitle"
         android:layout_width="match_parent"
-        android:layout_height=""
+        android:layout_height="?attr/actionBarSize"
+        android:text="All Exercise"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:fontFamily="@font/akaya_telivigala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:background="@color/cardview_dark_background"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gymlogo"
+        android:padding="@dimen/_4sdp"
+        />
     
-
-    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allexeMainRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
