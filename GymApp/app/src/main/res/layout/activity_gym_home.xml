@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".GymHome">
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -39,6 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/topTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="?attr/actionBarSize"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:cardCornerRadius="@dimen/_4sdp"
-        app:Elevation="@dimen/_8sdp"
         app:strokeWidth="@dimen/_2sdp"
         app:strokeColor="#C39494"
         >
@@ -22,14 +21,17 @@
             android:orientation="vertical"
             android:gravity="center_horizontal"
             android:padding="@dimen/_4sdp"
+            android:background="#B6F3B8"
             >
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/instumentimg"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:src="@drawable/defaultweight"
                 android:scaleType="centerCrop"
                 />
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/instumentname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
